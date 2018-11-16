@@ -68,8 +68,10 @@
             (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild( mtiTracking );
         })();
     </script>
+	<% require css("themes/GTM/assets/css/app.css") %>
 	<% include PageCSS %>
 	<% if $ExtraJS %><script>$ExtraJS</script><% end_if %>
+
 </head>
 <body class="$ClassName.ShortName" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
 <% include SiteHeader %>
@@ -82,5 +84,19 @@
 </main>
 <% include SiteFooter %>
 <% require javascript('themes/GTM/assets/js/app.js') %>
+<script type="text/javascript">
+    var _ss = _ss || [];
+    _ss.push(['_setDomain', 'https://koi-3QNCP75ZI2.marketingautomation.services/net']);
+    _ss.push(['_setAccount', 'KOI-3YL25CUGQW']);
+    _ss.push(['_trackPageView']);
+    (function() {
+        var ss = document.createElement('script');
+        ss.type = 'text/javascript'; ss.async = true;
+
+        ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'koi-3QNCP75ZI2.marketingautomation.services/client/ss.js?ver=1.1.1';
+        var scr = document.getElementsByTagName('script')[0];
+        scr.parentNode.insertBefore(ss, scr);
+    })();
+</script>
 </body>
 </html>
