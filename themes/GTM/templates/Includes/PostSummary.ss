@@ -4,7 +4,7 @@
 	    $FeaturedImage.ScaleWidth(900)
     </a>
     <div class="blog-summary-content">
-        <h1 class="h5"><a href="$Link">Creating the Top Digital Marketing Agency in Canada</a></h1>
+        <h1 class="h5"><a href="$Link">$Title</a></h1>
 	    <% if $Featured %>
 		    <% if $Summary %>
 			    $Summary
