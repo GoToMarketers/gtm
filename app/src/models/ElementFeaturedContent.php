@@ -22,7 +22,7 @@ class ElementFeaturedContent extends BaseElement
 
     public function getPosts() {
 
-        $posts = BlogPost::get()->sort(['PublishDate' => 'DESC'])->Limit(4);
+        $posts = BlogPost::get()->sort(['PublishDate','DESC'])->Limit(4);
 
         return $posts->count() ? $posts : false;
 
