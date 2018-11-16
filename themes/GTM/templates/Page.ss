@@ -68,7 +68,8 @@
             (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild( mtiTracking );
         })();
     </script>
-	<% require css("themes/GTM/assets/css/app.css") %>
+	<link rel="stylesheet" type="text/css" href="/resources/themes/GTM/assets/css/app.css">
+	<%--<% require css("themes/GTM/assets/css/app.css") %>--%>
 	<% include PageCSS %>
 	<% if $ExtraJS %><script>$ExtraJS</script><% end_if %>
 
