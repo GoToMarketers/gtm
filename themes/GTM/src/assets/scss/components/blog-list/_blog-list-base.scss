@@ -1,0 +1,62 @@
+.blog-list {
+	@include xy-grid;
+
+	.blog-summary {
+		@include xy-cell(full, true, $grid-margin-gutters, margin, left right bottom top, large);
+
+		flex-direction: column;
+
+		@include breakpoint(medium) {
+			@include xy-cell(1 of 2);
+		}
+
+		@include breakpoint(large) {
+			@include xy-cell(1 of 3);
+		}
+
+		@include breakpoint(xlarge) {
+			@include xy-cell(1 of 5);
+		}
+
+		&.blog-summary-feature {
+			@include breakpoint(medium) {
+				@include xy-cell(2 of 2);
+			}
+
+			@include breakpoint(large) {
+				@include xy-cell(2 of 3);
+			}
+
+			@include breakpoint(xlarge) {
+				@include xy-cell(2 of 5);
+			}
+		}
+
+		h1 a {
+			color: $black;
+			text-decoration: none;
+		}
+	}
+
+}
+
+
+.blog-list {
+	.blog-summary {
+		background-color: $white;
+
+		.blog-summary-content {
+			padding: 1.5em;
+		}
+	}
+
+	.blog-summary-feature {
+		.blog-summary-content {
+			padding: 1.5em;
+			margin-left: 1.5em;
+			margin-right: 1.5em;
+			margin-top: -4.5em;
+			background-color: $white;
+		}
+	}
+}

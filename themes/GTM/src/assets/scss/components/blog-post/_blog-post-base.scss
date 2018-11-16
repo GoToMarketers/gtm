@@ -1,0 +1,24 @@
+
+
+@include breakpoint(large) {
+
+	.blog-header {
+		h1 {
+			@include fluid-type(font-size, $msWidth-min, $msWidth-max, $msFont-min * $ms6, $msFont-max * $ms6);
+		}
+	}
+
+	@supports (display: $flagcheck) {
+		.blog-post {
+			display: grid;
+			grid-template-columns: 1fr 60rem 1fr;
+
+			& > * {
+				grid-column: 2;
+			}
+
+		}
+
+	}
+
+}

@@ -1,0 +1,31 @@
+.page-header-content {
+	h1, .h1 {
+		margin-top: 0;
+	}
+
+	.lead {
+		line-height: 1.5;
+	}
+
+	@include breakpoint(large) {
+		font-size: 1.5em;
+	}
+}
+
+.page-header {
+
+	&:not(.pill-header-4),
+	&:not(.pill-header-7),
+	&:not(.hero-header) {
+		padding-bottom: 2em;
+
+		@include breakpoint(medium) {
+			padding-bottom: 4em;
+		}
+
+	}
+
+	&.dark-bg, &.blue-bg, &.red-bg {
+		text-shadow: 0px 0px 3px rgba($black, 0.5);
+	}
+}

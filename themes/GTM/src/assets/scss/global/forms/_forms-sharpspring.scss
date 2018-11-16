@@ -1,0 +1,22 @@
+ul.form_fields {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	& > li {
+		margin-bottom: $form-spacing;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+
+		div.field_value {
+			width: 100%;
+		}
+
+		label.error {
+			order: 1;
+		}
+	}
+
+}
+

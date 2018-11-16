@@ -1,0 +1,257 @@
+.site-header-bar {
+	background-color: $white;
+	display: flex;
+
+	flex-direction: column;
+	position: fixed;
+	justify-content: space-between;
+	top: 0;
+	bottom: 0;
+
+
+	width: 4em;
+	overflow: hidden;
+
+	transition-property: width;
+	transition-duration: 0.25s;
+	transition-timing-function: ease-in-out;
+
+	z-index: 2;
+
+	&.expanded {
+		width: 80vw;
+	}
+
+	//box-shadow: 0.25em 0px 0.5em rgba(0,0,0,0.3);
+
+	border-right: 1px solid $c-gtm-grey-dark;
+
+	@include  breakpoint(large) {
+		width: 100%;
+		bottom: auto;
+		flex-direction: row;
+		justify-content: center;
+		background-color: transparent;
+		overflow: visible;
+		transition: 0.3s;
+
+		padding-left: 1em;
+		padding-right: 1em;
+
+		z-index: 2;
+
+	}
+
+}
+
+.site-header-bar {
+	@include breakpoint(large) {
+
+		&:after {
+			content: '';
+			background-color: $white;
+			display: block;
+			position: absolute;
+			width: 100%;
+			transform-origin: left bottom;
+			transform: rotate(-18deg)  translateX(-5%);
+			z-index: -1;
+			height: 130%;
+			height: 290%;
+			transition: 0.3s;
+			border-bottom-width: 1px;
+			border-bottom-style: solid;
+			border-bottom-color: rgba($black, 0);
+			bottom: -1.3em;
+			bottom: -6.8em;
+		}
+
+		&.aos-animate:after {
+			transform: rotate(0)  translateX(0);
+			background-color: rgba($white, 0.95);
+			border-bottom-color: rgba($black, 1);
+			bottom: -0.4em;
+		}
+
+	}
+}
+
+
+.site-nav {
+	flex-grow: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 80vw;
+
+	@media (min-width: 1024px) {
+		width: 100%;
+		align-items: flex-end;
+	}
+}
+
+.main-menu {
+	@media (min-width: 1024px) {
+		display: flex;
+	}
+}
+
+.main-menu li {
+	padding: 0.75em 0;
+	//transform: translateY(250px);
+	opacity: 0;
+	transition: opacity;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0.15s;
+
+	@media (min-width: 1024px) {
+		opacity: 1;
+	}
+}
+
+
+.expanded .main-menu li {
+	opacity: 1;
+}
+
+.site-logo {
+	width: 4em;
+	height: 4em;
+	margin-left: 0;
+	margin-top: 0.5em;
+}
+
+
+@include breakpoint(large) {
+	.site-header-bar    .site-logo {
+		margin-top: 0;
+		overflow: visible !important;
+		transform-origin: top left;
+		transform: scale(1.9) translateY(0.5em);
+		transition: 0.3s;
+
+		.gtm-wordmark, .gtm-symbol {
+			transition: 0.3s;
+		}
+	}
+
+	.aos-animate .site-logo {
+
+		transform: none;
+
+		.gtm-symbol, .gtm-wordmark {
+			transform-origin: left;
+		}
+
+		.gtm-symbol {
+			transform: translateY(-1em) scale(1.2);
+		}
+
+		.gtm-wordmark {
+			transform: translateX(2.8em) scale(1.2) translateY(1.2em);
+		}
+	}
+}
+
+
+.main-menu-link {
+	color: $black;
+	font-family: $header-font-family;
+	//text-decoration: $main-nav-link-decoration;
+
+	font-size: 1.125em;
+	padding: 0.5em 1em;
+
+	@include breakpoint(large) {
+
+		font-size: 0.875em;
+
+		color: $white;
+		text-shadow: 0 0 3px rgba(0,0,0,0.5);
+		transition: 0.3s;
+	}
+
+}
+
+
+@include breakpoint(large) {
+	.aos-animate .main-menu-link {
+		color: black;
+		text-shadow: 0 0 3px rgba(0,0,0,0);
+	}
+}
+
+.site-header .logo-color {
+	fill: $c-gtm-green;
+
+}
+
+
+$buttonWidth: 24px;
+$buttonHeight: 18px;
+$buttonColor: darken(get-color(primary), 15%);
+$lineThickness: 4px;
+$transitionSpeed: .25s;
+$transitionEasing: ease-in-out;
+
+// Demo
+.menu-toggle {
+	position: relative;
+	display: block;
+	width: $buttonWidth;
+	height: $buttonHeight;
+
+	background: transparent;
+	border-top: $lineThickness solid;
+	border-bottom: $lineThickness solid;
+
+	color: $buttonColor;
+	font-size: 0;
+
+	transition: all $transitionSpeed $transitionEasing;
+
+	align-self: center;
+
+	margin-left: 24px;
+	margin-right: 24px;
+	margin-bottom: 24px;
+
+	&:before,
+	&:after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: $lineThickness;
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
+		background: currentColor;
+
+		transform: translate(-50%, -50%);
+		transition: transform $transitionSpeed $transitionEasing;
+		transition-delay: 0.25s;
+	}
+}
+
+.expanded .menu-toggle {
+	align-self: end;
+}
+
+button:hover {
+	color: lighten($buttonColor, 15%);
+}
+
+button.is-active {
+	border-color: transparent;
+
+	&:before {
+		transform: translate(-50%, -50%) rotate(45deg);
+	}
+
+	&:after {
+		transform: translate(-50%, -50%) rotate(-45deg);
+	}
+}

@@ -1,0 +1,34 @@
+.light-bg {
+	background-color: $c-gtm-grey-light;
+}
+
+.dark-bg {
+	background-color: $c-gtm-grey-dark;
+}
+
+.darkblue-bg {
+	background-color: $c-gtm-blue-dark;
+}
+
+.blue-bg {
+	background-color: $c-gtm-blue;
+}
+
+.red-bg {
+	background-color: $c-gtm-red;
+}
+
+.dark-bg,
+.darkblue-bg,
+.blue-bg,
+.red-bg {
+	color: $white;
+
+	a:not(.button) {
+		color: $white;
+	}
+
+	form a {
+		color: $anchor-color;
+	}
+}

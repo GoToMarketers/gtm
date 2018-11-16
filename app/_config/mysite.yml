@@ -1,0 +1,17 @@
+---
+Name: myproject
+---
+SilverStripe\Core\Manifest\ModuleManifest:
+  project: app
+
+CustomPage:
+  extensions:
+    - DNADesign\Elemental\Extensions\ElementalPageExtension
+
+DNADesign\Elemental\Models\BaseElement:
+  extensions:
+    - ElementExtension
+
+SilverStripe\Blog\Model\BlogPost:
+  extensions:
+    - BlogPostExtension

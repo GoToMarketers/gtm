@@ -1,0 +1,24 @@
+
+.overflow-image {
+
+	@include breakpoint(large) {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.image-element__content {
+
+		@include breakpoint(large) {
+			height: 0;
+			overflow: visible;
+
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+
+		}
+
+	}
+
+}

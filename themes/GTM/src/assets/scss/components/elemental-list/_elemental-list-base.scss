@@ -1,0 +1,44 @@
+.element div.list-element__container {
+	max-width: $global-width;
+
+	&.full-width {
+		max-width: 100%;
+	}
+
+}
+
+.full-width div.list-element__container {
+	max-width: 100% ;
+}
+
+.dnadesign__elementallist__model__elementlist:not(.services-list) .list-element__container {
+
+	@include breakpoint(large) {
+		@include xy-grid();
+
+
+		& > .element {
+			@include xy-cell-base(auto)
+		}
+	}
+
+
+
+}
+
+.services-list .list-element__container {
+
+
+	@include breakpoint(medium) {
+		@include xy-grid();
+
+		flex-wrap: wrap;
+		@include xy-grid-layout(3, '.element');
+
+	}
+
+	@include breakpoint(large) {
+		@include xy-grid-layout(4, '.element');
+
+	}
+}

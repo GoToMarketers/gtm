@@ -1,0 +1,24 @@
+.logo-list {
+	justify-content: center;
+	li {
+		flex-basis: 200px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+	}
+}
+
+.logo-link-client {
+	filter: grayscale(100%);
+	display: block;
+
+
+
+}
+
+a.logo-link-client {
+	&:hover {
+		filter: none;
+	}
+}

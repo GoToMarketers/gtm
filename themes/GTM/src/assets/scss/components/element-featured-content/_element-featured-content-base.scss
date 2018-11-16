@@ -1,0 +1,74 @@
+.gotomarketers__models__elements__elementfeaturedcontent {
+	max-width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+
+	.blog-summary {
+		background-position: center center;
+		background-size: cover;
+
+		@include breakpoint(large) {
+			flex-basis: 50%;
+		}
+	}
+
+	.blog-summary-content {
+		color: $white;
+		padding: 1em;
+		background-color: $c-gtm-grey-dark;
+
+		a:not(.button) {
+			color: $white;
+		}
+
+		.button {
+			margin: 0 auto;
+			background-color: $white;
+
+			&:hover {
+				background-color: $button-background;
+			}
+		}
+	}
+
+	article:nth-child(even) .blog-summary-content {
+		background-color: $c-gtm-blue-dark;
+	}
+
+
+
+	.blog-summary-title {
+		margin-top: 0;
+	}
+
+	.blog-summary-excerpt {
+
+	}
+}
+
+.gotomarketers__models__elements__elementfeaturedcontent, .blog-summary {
+	@include breakpoint(large) {
+		display: flex;
+		align-content: stretch;
+		flex-wrap: wrap;
+	}
+
+	@include breakpoint(xlarge) {
+		flex-wrap: nowrap;
+	}
+}
+
+.gotomarketers__models__elements__elementfeaturedcontent {
+	@include breakpoint(large) {
+
+		.blog-summary-content {
+			opacity: 0;
+			transition: 0.3s;
+			height: 100%;
+		}
+
+		.blog-summary:hover .blog-summary-content {
+			opacity: 1;
+		}
+	}
+}

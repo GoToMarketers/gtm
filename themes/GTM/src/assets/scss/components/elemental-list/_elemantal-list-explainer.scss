@@ -1,0 +1,50 @@
+.explainer-section {
+
+	@media (min-width:900px) {
+		display: flex;
+
+		.section-heading {
+			flex-basis: 33%;
+			flex-shrink: 0;
+			min-width: 330px;
+			max-width: 600px;
+			padding-right: 1em;
+		}
+
+		.explainer-section-content {
+			display: grid;
+			grid-template-columns:  repeat(auto-fill, minmax(330px, 1fr) );
+			grid-column-gap: 2em;
+			grid-row-gap: 1em;
+			grid-auto-rows: auto;
+			margin: 0;
+			max-width: 66%;
+			flex-basis: 66%;
+
+		}
+
+	}
+
+}
+
+.explainer-section-content {
+	.element {
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 1.5em;
+
+		&:last-of-type {
+			padding-bottom: 0;
+		}
+
+		@include breakpoint(900px) {
+
+			@supports (display: $flagcheck) {
+				padding-bottom: 0;
+			}
+
+		}
+
+
+	}
+}

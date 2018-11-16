@@ -1,0 +1,114 @@
+.pill-header-4 {
+	.pills-holder {
+		display: none;
+
+		@include breakpoint(720) {
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 968px;
+			height: 1379px;
+			transform-origin: top right;
+			transform: scale(0.6) rotate(18deg) translateX(9vw) translateY(-2vw);
+		}
+
+		@include breakpoint(large) {
+			transform: scale(0.75) rotate(18deg) translateX(9vw) translateY(-7vw);
+		}
+
+		@include breakpoint(1200) {
+			transform: scale(0.625) rotate(18deg) translateX(9vw) translateY(-7vw);
+		}
+
+		@include breakpoint(xlarge) {
+			transform: scale(1) rotate(18deg) translateX(100px) translateY(-150px);
+		}
+
+
+	}
+
+	.pill-holder {
+		float: left;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.pill-1-holder {
+		//transform: translateX(-100px) translateY(-265px);
+		transform:  translateY(243px);
+	}
+
+	.pill-2-holder {
+
+	}
+
+	.pill-3-holder {
+		//transform: translateX(-32px) translateY(-385px);
+		transform:  translateY(128px);
+	}
+
+	.pill-4-holder {
+		//transform: translateX(2px) translateY(-375px);
+		transform: translateY(60px)  ;
+	}
+}
+
+
+.pill-header-7 {
+	.pills-holder {
+		display: none;
+
+		@include breakpoint(720) {
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 1025px;
+			height: 867px;
+			transform-origin: top right;
+			transform: translateX(9vw) translateY(-20vw);
+		}
+
+		@include breakpoint(large) {
+			transform: translateY(-220px);
+		}
+
+		@include breakpoint(1200) {
+			transform: scale(1.125) translateY(-200px) translateX(9vw);
+		}
+
+		@include breakpoint(xlarge) {
+			transform: scale(1.25) translateY(-200px);
+		}
+
+	}
+
+	.pill-holder {
+		float: left;
+		margin-left: 12px;
+		margin-right: 12px;
+	}
+
+	.pill-1-holder{
+		transform: translateY(176px);
+	}
+	.pill-2-holder{
+		transform: translateY(28px);
+	}
+	.pill-3-holder{
+		transform: translateY(106px);
+	}
+	.pill-4-holder{
+		transform: translateY(64px);
+	}
+	.pill-5-holder{
+		transform: translateY(115px);
+	}
+	.pill-6-holder{
+		//transform: translateY(176px);
+	}
+	.pill-7-holder{
+		transform: translateY(118px);
+	}
+}

@@ -1,0 +1,18 @@
+DNADesign\Elemental\Controllers\ElementController:
+  include_default_styles: false
+
+
+DNADesign\ElementalList\Model\ElementList:
+  styles:
+    # default-list: 'Default'
+    explainer-section: 'Explainer'
+
+GoToMarketers\Models\Elements\ElementIcon:
+  styles:
+    icon-element__big-icon: 'Big Icon'
+    icon-element__summary-style: 'Summary'
+    icon-element__circle-icon: 'Circle'
+
+GoToMarketers\Models\Elements\ElementImage:
+  styles:
+    overflow-image: 'Overflow Vertical'
