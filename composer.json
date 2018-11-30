@@ -40,7 +40,8 @@
             "themes/GTM/assets/img",
             "themes/GTM/assets/vendor",
             "themes/GTM/fonts",
-            "themes/GTM/src"
+            "themes/GTM/src",
+            "themes/GTM/css"
         ]
     },
     "config": {
