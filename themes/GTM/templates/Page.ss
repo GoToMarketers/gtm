@@ -80,7 +80,6 @@
 	<% include PageHeader %>
     <div class="page-body" aos-anchor-placement="bottom-bottom">
 		$Layout
-	    $Form
     </div>
 </main>
 <% include SiteFooter %>

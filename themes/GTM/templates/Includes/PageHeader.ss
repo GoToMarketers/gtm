@@ -28,6 +28,7 @@
 			        $HeaderContent
 		        <% else %>
                     <h1>$Title</h1>
+			        <% if $Form %>$Content<% end_if %>
 		        <% end_if %>
 	        <% end_if %>
 

@@ -19,7 +19,7 @@
 		}
 
 		@include breakpoint(xxxlarge) {
-			@include xy-cell(1 of 6);
+			@include xy-cell(1 of 8);
 		}
 
 		&.blog-summary-feature {
@@ -36,7 +36,7 @@
 			}
 
 			@include breakpoint(xxxlarge) {
-				@include xy-cell(2 of 6);
+				@include xy-cell(2 of 8);
 			}
 		}
 

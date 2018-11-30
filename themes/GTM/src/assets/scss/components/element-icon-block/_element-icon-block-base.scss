@@ -28,17 +28,23 @@
 				"icon header"
 				"content content";
 
-			.icon {
+			.icon-holder {
 
-				height: auto;
-				width: 100%;
+
 				grid-area: icon;
 				justify-self: center;
+
+				.icon {
+					height: auto;
+					width: 100%;
+				}
+
 			}
 
 
 
-			h1, h2, h3, h4, h5, h6 {
+			h1, h2, h3, h4, h5, h6
+			.h1, .h2, .h3, .h4, .h5, .h6{
 				grid-area: header;
 				margin: 0;
 			}
@@ -60,7 +66,7 @@
 
 		text-align: center;
 
-		.icon {
+		.icon-holder {
 			width: 7em;
 			height: 7em;
 			margin-left: auto;

@@ -11,15 +11,16 @@
 	justify-content: flex-end;
 
 	min-height: calc(50vh - 4em);
-
+	background-color: $c-gtm-blue-dark;
+	color: $white;
 
 	position: relative;
 
 	text-align: center;
 
 	@include breakpoint(large) {
-		height: calc(100vh - 5em);
-		min-height: 60px;
+		height: 30vh;
+		min-height: 400px;
 	}
 
 
@@ -31,6 +32,15 @@
 
 	.h1 {
 		margin-bottom: 0;
+	}
+}
+
+.simple-header {
+
+
+	@include breakpoint(large) {
+		height: calc(100vh - 5em);
+		min-height: 60px;
 	}
 }
 
