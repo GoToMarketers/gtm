@@ -11,7 +11,7 @@
 	max-width: 100% ;
 }
 
-.dnadesign__elementallist__model__elementlist:not(.services-list) .list-element__container {
+.dnadesign__elementallist__model__elementlist:not(.services-list):not(.explainer-section) .list-element__container{
 
 	@include breakpoint(large) {
 		@include xy-grid();

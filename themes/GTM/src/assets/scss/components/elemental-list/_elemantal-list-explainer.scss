@@ -1,6 +1,6 @@
 .explainer-section {
 
-	@media (min-width:900px) {
+	@include breakpoint(large) {
 		display: flex;
 
 		.section-heading {
@@ -11,13 +11,12 @@
 			padding-right: 1em;
 		}
 
-		.explainer-section-content {
+		.list-element__container {
 			display: grid;
-			grid-template-columns:  repeat(auto-fill, minmax(330px, 1fr) );
+			grid-template-columns:  repeat(auto-fill, minmax(250px, 400px));;
 			grid-column-gap: 2em;
 			grid-row-gap: 1em;
 			grid-auto-rows: auto;
-			margin: 0;
 			max-width: 66%;
 			flex-basis: 66%;
 
@@ -27,7 +26,10 @@
 
 }
 
-.explainer-section-content {
+.list-element__container {
+
+
+
 	.element {
 		padding-left: 0;
 		padding-right: 0;
@@ -37,7 +39,7 @@
 			padding-bottom: 0;
 		}
 
-		@include breakpoint(900px) {
+		@include breakpoint(large) {
 
 			@supports (display: $flagcheck) {
 				padding-bottom: 0;
