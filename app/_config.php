@@ -4,7 +4,7 @@
 use SilverStripe\Forms\HTMLEditor\TinyMCEConfig;
 use SilverStripe\ORM\Search\FulltextSearchable;
 
-FulltextSearchable::enable();
+//FulltextSearchable::enable();
 
 $formats = [
     [ 'title' => 'Headings', 'items' => [

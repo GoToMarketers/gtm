@@ -5,6 +5,7 @@ namespace GoToMarketers\Model\DataObjects;
 
 use GoToMarketers\Models\Elements\ElementLogoList;
 use SilverStripe\ORM\DataObject;
+use SilverStripe\View\Parsers\URLSegmentFilter;
 
 class Taxonomy extends DataObject
 {
