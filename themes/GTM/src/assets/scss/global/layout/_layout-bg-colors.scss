@@ -1,18 +1,31 @@
+.white-bg {
+	background-color: $white;
+}
+
+.offwhite-bg {
+	background-color: $c-gtm-off-white;
+	background-image: linear-gradient($c-gtm-off-white, darken($c-gtm-off-white, 4));
+}
+
 .light-bg {
 	background-color: $c-gtm-grey-light;
 	color: $black;
+	background-image: linear-gradient($c-gtm-grey-light, darken($c-gtm-grey-light, 4));
 }
 
 .dark-bg {
 	background-color: $c-gtm-grey-dark;
+	background-image: linear-gradient($c-gtm-grey-dark, darken($c-gtm-grey-dark, 4));
 }
 
 .darkblue-bg {
 	background-color: $c-gtm-blue-dark;
+	background-image: linear-gradient($c-gtm-blue-dark, darken($c-gtm-blue-dark, 4));
 }
 
 .blue-bg {
 	background-color: $c-gtm-blue;
+	background-image: linear-gradient($c-gtm-blue, darken($c-gtm-blue, 8));
 }
 
 .red-bg {

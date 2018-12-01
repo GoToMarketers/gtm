@@ -50,6 +50,8 @@ body {
 	min-height: 100vh;
 }
 
+
+
 .element {
 
 	padding-left: 1em;
@@ -69,8 +71,17 @@ body {
 			max-width: 100% ;
 		}
 	}
+
+	&.box-shadow {
+		box-shadow: 0px 0px 2em rgba($black, 0.3);
+	}
+
+	&.box-shadow-light {
+		box-shadow: 0px 0px 2em rgba($black, 0.2);
+	}
 }
 
 .section-heading {
 	margin-top: 0;
 }
+
