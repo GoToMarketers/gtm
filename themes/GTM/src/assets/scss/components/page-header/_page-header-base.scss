@@ -97,14 +97,11 @@
 		min-height: calc(100vh - 4em);
 	}
 
-	@include breakpoint(1200) {
-		min-height: 600px;
-		justify-content: center;
 
-	}
 
 	@include breakpoint(xlarge) {
 		min-height: 900px;
+		justify-content: center;
 	}
 
 	.page-header-content {

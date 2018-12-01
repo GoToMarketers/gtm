@@ -4,3 +4,16 @@ div.field {
 	flex-direction: column;
 	width: 100%;
 }
+
+div.field.checkbox {
+	flex-direction: row;
+
+	input {
+		margin-bottom: 0;
+	}
+}
+
+p#ForgotPassword {
+	margin-top: 0;
+	font-size: 0.875em;
+}

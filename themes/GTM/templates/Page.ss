@@ -76,7 +76,7 @@
 </head>
 <body class="$ClassName.ShortName" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
 <% include SiteHeader %>
-<main>
+<main class="main">
 	<% include PageHeader %>
     <div class="page-body" aos-anchor-placement="bottom-bottom">
 		$Layout

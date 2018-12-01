@@ -56,14 +56,12 @@
 			transform-origin: left bottom;
 			transform: rotate(-18deg)  translateX(-5%);
 			z-index: -1;
-			height: 130%;
 			height: 290%;
 			transition: 0.3s;
 			border-bottom-width: 1px;
 			border-bottom-style: solid;
 			border-bottom-color: rgba($black, 0);
-			bottom: -1.3em;
-			bottom: -6.8em;
+			bottom: -4em;
 		}
 
 		&.aos-animate:after {
@@ -71,6 +69,15 @@
 			background-color: rgba($white, 0.95);
 			border-bottom-color: rgba($black, 1);
 			bottom: -0.4em;
+		}
+
+	}
+
+	@include breakpoint(xlarge) {
+
+		&:after
+		{
+			bottom: -6.8em;
 		}
 
 	}
@@ -128,7 +135,7 @@
 		margin-top: 0;
 		overflow: visible !important;
 		transform-origin: top left;
-		transform: scale(1.9) translateY(0.5em);
+		transform: scale(1.25) translateY(0.5em);
 		transition: 0.3s;
 
 		.gtm-wordmark, .gtm-symbol {
@@ -150,6 +157,23 @@
 
 		.gtm-wordmark {
 			transform: translateX(2.8em) scale(1.2) translateY(1.2em);
+		}
+	}
+}
+
+@include breakpoint(xlarge) {
+	.site-header-bar    .site-logo {
+		transform: scale(1.9) translateY(0.5em);
+	}
+
+	.aos-animate .site-logo {
+
+		.gtm-symbol {
+			transform: translateY(-2.25em) scale(0.75);
+		}
+
+		.gtm-wordmark {
+			transform: translateX(1.8em) scale(0.75) translateY(-0.975em);
 		}
 	}
 }
