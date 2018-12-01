@@ -5,15 +5,17 @@ namespace GoToMarketers\Models\Elements;
 use DNADesign\Elemental\Models\ElementContent;
 use NathanCox\CodeEditorField\CodeEditorField;
 
-class ElementHTML extends ElementContent {
+class ElementRawHTML extends ElementContent {
 
-    private static $singular_name = 'HTML Code Element';
+    private static $singular_name = 'RAW HTML Code';
 
-    private static $plural_name = 'HTML Code Elements';
+    private static $plural_name = 'RAW HTML Code';
 
-    private static $description = 'Renders arbitrary HTML Code in an Element ';
+    private static $description = 'Renders arbitrary HTML Code';
 
-    private static $table_name = 'ElementHTML';
+    private static $controller_template = 'NakedElement';
+
+    private static $table_name = 'ElementRawHTML';
 
     public function getCMSFields()
     {
@@ -27,12 +29,16 @@ class ElementHTML extends ElementContent {
                            ->setTheme('twilight')
         );
 
+        $fields->removeFieldFromTab('Root.Main', 'TitleTag');
+        $fields->removeFieldFromTab('Root.Main', 'TitleClass');
+        $fields->removeFieldFromTab('Root.Main', 'BackgroundImage');
+
         return $fields;
     }
 
     public function getType()
     {
-        return 'HTML Element';
+        return 'Raw HTML';
     }
 
 }
