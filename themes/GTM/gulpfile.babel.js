@@ -90,7 +90,7 @@ function sass() {
     // PRODUCTION && uncss.postcssPlugin(UNCSS_OPTIONS),
   ].filter(Boolean);
 
-  return gulp.src(['src/assets/scss/app.scss','src/assets/scss/editor.scss'])
+  return gulp.src(['src/assets/scss/app.scss','src/assets/scss/editor.scss','src/assets/scss/sharpspring-forms.scss'])
     .pipe($.sourcemaps.init())
     .pipe($.sass({
       includePaths: PATHS.sass
