@@ -5,8 +5,18 @@
 
 @import "mixins/fluid-type";
 
+body {
+	font-family: $body-font-family;
+}
+
+label {
+	font-family: $header-font-family;
+}
+
 @include foundation-button;
 @include foundation-forms;
+
+
 
 @import "global/forms/forms-base";
 @import "global/forms/forms-sharpspring";
