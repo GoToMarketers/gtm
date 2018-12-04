@@ -2,6 +2,14 @@
 
 	@include breakpoint(large) {
 		display: flex;
+		flex-direction: column;
+		text-align: center;
+		@supports (display: $flagcheck) {
+			text-align: left;
+			flex-direction: row;
+		}
+
+
 
 		.section-heading {
 			flex-basis: 33%;
@@ -12,15 +20,22 @@
 		}
 
 		.list-element__container {
-			display: grid;
-			grid-template-columns:  repeat(auto-fill, minmax(250px, 400px));;
-			grid-column-gap: 2em;
-			grid-row-gap: 1em;
-			grid-auto-rows: auto;
-			max-width: 66%;
-			flex-basis: 66%;
-
+			display: block;
 		}
+
+		@supports (display: $flagcheck) {
+			.list-element__container {
+				display: grid;
+				grid-template-columns:  repeat(auto-fill, minmax(250px, 400px));;
+				grid-column-gap: 2em;
+				grid-row-gap: 1em;
+				grid-auto-rows: auto;
+				max-width: 66%;
+				flex-basis: 66%;
+
+			}
+		}
+
 
 	}
 

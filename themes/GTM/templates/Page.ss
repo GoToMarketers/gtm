@@ -107,7 +107,13 @@
     </div>
 </main>
 <% include SiteFooter %>
-<% require javascript('themes/GTM/assets/js/app.js') %>
+<%--<script--%>
+        <%--src="//code.jquery.com/jquery-3.3.1.min.js"--%>
+        <%--integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="--%>
+        <%--crossorigin="anonymous"></script>--%>
+	<% require javascript('themes/GTM/assets/vendor/lazyload.min.js') %>
+	<% require javascript('themes/GTM/assets/js/app.js') %>
+
 <script type="text/javascript">
     var _ss = _ss || [];
     _ss.push(['_setDomain', 'https://koi-3QNCP75ZI2.marketingautomation.services/net']);
@@ -121,6 +127,8 @@
         var scr = document.getElementsByTagName('script')[0];
         scr.parentNode.insertBefore(ss, scr);
     })();
+
+    lazyload();
 </script>
 </body>
 </html>

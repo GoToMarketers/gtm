@@ -19,3 +19,7 @@ DNADesign\Elemental\Models\BaseElement:
 SilverStripe\Blog\Model\BlogPost:
   extensions:
     - BlogPostExtension
+
+SilverStripe\Assets\Image:
+  extensions:
+    - ImageExtension

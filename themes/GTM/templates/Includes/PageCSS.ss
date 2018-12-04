@@ -1,7 +1,7 @@
 <% if $ExtraCSS || $HeaderImage %>
 <style>
 	<% if $HeaderImage %>
-		.page-header { background-image: url("$HeaderImage.ScaleMaxWidth(1600).Link") }
+		<%--.page-header { background-image: url("$HeaderImage.ScaleMaxWidth(300).Blur(10).Link") }--%>
 	<% end_if %>
 	<% if $ExtraCSS %>
 		$ExtraCSS

@@ -11,9 +11,9 @@
     <ul class="logo-list logo-list-clients menu align-middle">
 	    <% loop $Logos %>
 	        <% if $URL %>
-                <li><a class="logo-link-client" href="$URL">$Logo.ScaleMaxWidth(360)</a></li>
+                <li><a class="logo-link-client" href="$URL">$Logo.ScaleMaxWidth(170)</a></li>
 	        <% else %>
-                <li class="menu-text"><span class="logo-link-client">$Logo.ScaleMaxWidth(360)</span></li>
+                <li class="menu-text"><span class="logo-link-client">$Logo.ScaleMaxWidth(170)</span></li>
 	        <% end_if %>
         <% end_loop %>
     </ul>

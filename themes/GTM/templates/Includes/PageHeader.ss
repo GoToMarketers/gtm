@@ -1,4 +1,4 @@
-<header id="PageHeader" class="page-header $HeaderType $HeaderClasses">
+<header id="PageHeader" class="page-header $HeaderType $HeaderClasses<% if $HeaderImage %> lazyload<% end_if %>" data-src="$HeaderImage.ScaleMaxWidth(1600).Link" style='background-image: url("$HeaderImage.ScaleMaxWidth(30).Blur(10).Link")'>
     <div class="page-header-row" >
         <div class="page-header-content">
 	        <% if $ClassName == "SilverStripe\Blog\Model\Blog" %>
