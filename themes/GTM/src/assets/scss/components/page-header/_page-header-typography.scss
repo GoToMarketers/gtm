@@ -24,6 +24,11 @@
 			padding-bottom: 4em;
 		}
 
+		@media (min-width: 1024px) and (max-height: 766px) {
+			padding-bottom: 0;
+		}
+
+
 	}
 
 	&.light-bg, &.offwhite-bg {

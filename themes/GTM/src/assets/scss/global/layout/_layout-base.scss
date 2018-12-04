@@ -2,6 +2,12 @@ body {
 
 	display: flex;
 
+	@include breakpoint(large) {
+
+			display: block;
+
+	}
+
 	@supports (display: $flagcheck) {
 		display: grid;
 		grid-template-rows: auto 1fr;
