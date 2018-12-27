@@ -7,7 +7,7 @@
         "silverstripe/recipe-plugin": "^1.2",
         "silverstripe/recipe-cms": "^4",
         "silverstripe-themes/simple": "~3.2.0",
-        "dnadesign/silverstripe-elemental": "3.0.x-dev",
+        "dnadesign/silverstripe-elemental": "4 as 3",
         "dnadesign/silverstripe-elemental-list": "^1.0",
         "silverstripe/blog": "^3.2",
         "heyday/silverstripe-menumanager": "^3.0",
