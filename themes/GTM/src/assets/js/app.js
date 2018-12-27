@@ -14,7 +14,20 @@ window.libs = libs;
 
 $(document).foundation();
 
-libs.AOS.init();
+
+//wait for pill images to load before intializing AOS
+var pageHeader = $('#PageHeader');
+
+if(pageHeader.length !== 0 && ( pageHeader.hasClass('.pill-header-4') || pageHeader.hasClass('.pill-header-7') ) ) {
+
+    var pillImages = $('.pill-holder img');
+
+    Foundation.onImagesLoaded(pillImages, libs.AOS.init());
+
+} else {
+    libs.AOS.init();
+}
+
 
 // SVG Injector
 // Elements to inject
