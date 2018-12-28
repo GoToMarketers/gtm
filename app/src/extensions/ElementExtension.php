@@ -32,6 +32,8 @@ class ElementExtension extends DataExtension
         'BackgroundImage'
     ];
 
+    private static $inline_editable = false;
+
     public function updateCMSFields(\SilverStripe\Forms\FieldList $fields)
     {
         $fields->removeByName('TitleTag');

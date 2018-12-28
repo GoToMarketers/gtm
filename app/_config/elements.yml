@@ -1,11 +1,16 @@
 DNADesign\Elemental\Controllers\ElementController:
   include_default_styles: false
 
+DNADesign\Elemental\Models\ElementContent:
+  extensions:
+    - ListElementExtension
 
 DNADesign\ElementalList\Model\ElementList:
   styles:
     # default-list: 'Default'
     explainer-section: 'Explainer'
+  extensions:
+    - ListElementExtension
 
 GoToMarketers\Models\Elements\ElementIcon:
   styles:

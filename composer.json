@@ -14,7 +14,8 @@
         "tractorcow/silverstripe-opengraph": "^4",
         "unclecheese/display-logic": "^2.0",
         "bummzack/sortablefile": "^2.1",
-        "nathancox/codeeditorfield": "v2.x-dev"
+        "nathancox/codeeditorfield": "v2.x-dev",
+        "league/color-extractor": "0.3.*"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7"

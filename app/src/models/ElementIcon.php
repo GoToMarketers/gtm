@@ -30,6 +30,8 @@ class ElementIcon extends ElementImage {
 
     private static $description = 'Create and Icon Block with an SVG or Uploaded Image and Content';
 
+    private static $inline_editable = false;
+
     public function getCMSFields()
     {
         $fields = parent::getCMSFields();

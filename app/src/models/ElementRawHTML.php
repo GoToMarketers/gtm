@@ -17,6 +17,8 @@ class ElementRawHTML extends ElementContent {
 
     private static $table_name = 'ElementRawHTML';
 
+    private static $inline_editable = false;
+
     public function getCMSFields()
     {
         $fields = parent::getCMSFields();

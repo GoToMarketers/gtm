@@ -30,6 +30,8 @@ class ElementLogoList extends ElementContent {
 
     private static $description = 'Displays a list of Tagged Logos';
 
+    private static $inline_editable = false;
+
     public function getCMSFields()
     {
         $fields = parent::getCMSFields();

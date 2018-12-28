@@ -15,6 +15,8 @@ class ElementFeaturedContent extends BaseElement
 
     private static $description = 'Create a block with Featured Blog Content';
 
+    private static $inline_editable = false;
+
     public function getType()
     {
         return 'Featured Blog Posts';

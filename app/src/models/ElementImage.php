@@ -22,6 +22,8 @@ class ElementImage extends ElementContent {
 
     private static $table_name = 'ElementImage';
 
+    private static $inline_editable = false;
+
     public function getCMSFields()
     {
         $fields = parent::getCMSFields();
