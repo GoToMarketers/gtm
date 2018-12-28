@@ -78,6 +78,7 @@ body {
 		}
 	}
 
+
 	&.box-shadow {
 		box-shadow: 0px 0px 2em rgba($black, 0.3);
 	}
@@ -85,6 +86,26 @@ body {
 	&.box-shadow-light {
 		box-shadow: 0px 0px 2em rgba($black, 0.2);
 	}
+}
+
+.dnadesign__elementallist__model__elementlist:not(.services-list):not(.explainer-section):not(.phi-small) .list-element__container > .element {
+
+	&.phi-small {
+		@include breakpoint(large) {
+			flex-basis: 38.2%;
+			flex-grow: 0;
+		}
+	}
+
+	&.full-width {
+
+		max-width: 100%;
+
+		& > div {
+			max-width: 100% ;
+		}
+	}
+
 }
 
 .section-heading {

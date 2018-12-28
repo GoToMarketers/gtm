@@ -31,6 +31,22 @@
 		}
 	}
 
+	.blog-summary-content.dark-link {
+		color: $black;
+
+		a:not(.button) {
+			color: $black;
+		}
+
+		.button {
+			background-color: $white;
+
+			&:hover {
+				background-color: $button-background;
+			}
+		}
+	}
+
 	article:nth-child(even) .blog-summary-content {
 		background-color: $c-gtm-blue-dark;
 	}

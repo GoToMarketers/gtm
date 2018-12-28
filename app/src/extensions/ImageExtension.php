@@ -1,6 +1,11 @@
 <?php
 
 use SilverStripe\Core\Extension;
+
+use League\ColorExtractor\Color;
+use League\ColorExtractor\ColorExtractor;
+use League\ColorExtractor\Palette;
+
 class ImageExtension extends Extension
 {
 
@@ -16,6 +21,18 @@ class ImageExtension extends Extension
             $clone->setImageResource($resource);
             return $clone;
         });
+    }
+
+    public function DominantColor() {
+
+        $filename = $this->owner->getString();
+        $image = imagecreatefromstring($filename);
+        $palette = Palette::fromGD($image);
+        $extractor = new ColorExtractor($palette);
+        $colors = $extractor->extract(1);
+        $color = Color::fromIntToHex($colors[0]);
+        return $color;
+
     }
 
 }

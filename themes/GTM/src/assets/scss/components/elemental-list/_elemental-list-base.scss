@@ -11,7 +11,7 @@
 	max-width: 100% ;
 }
 
-.dnadesign__elementallist__model__elementlist:not(.services-list):not(.explainer-section) .list-element__container{
+.dnadesign__elementallist__model__elementlist:not(.services-list):not(.explainer-section):not(.phi-small) .list-element__container{
 
 	@include breakpoint(large) {
 		@include xy-grid();
@@ -26,19 +26,65 @@
 
 }
 
+.dnadesign__elementallist__model__elementlist .list-element__container > .services-list .list-element__container,
 .services-list .list-element__container {
 
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	//@include breakpoint(medium) {
+	//	@include xy-grid();
+	//
+	//	flex-wrap: wrap;
+	//	@include xy-grid-layout(3, '.element');
+	//
+	//}
+	//
+	//@include breakpoint(large) {
+	//	@include xy-grid-layout(4, '.element');
+	//
+	//}
 
-	@include breakpoint(medium) {
-		@include xy-grid();
-
-		flex-wrap: wrap;
-		@include xy-grid-layout(3, '.element');
+	@supports (display: $flagcheck) {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, .25fr));
+		grid-column-gap: 1em;
+		grid-row-gap: 1em;
+		margin-left: auto;
+		margin-right: auto;
 
 	}
 
-	@include breakpoint(large) {
-		@include xy-grid-layout(4, '.element');
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+		margin-top: 0;
+	}
+
+}
+
+.dnadesign__elementallist__model__elementlist .list-element__container .services-list .list-element__container > .element,
+.services-list .list-element__container > .element{
+
+	flex-basis: 300px;
+
+	@supports (display: $flagcheck) {
+		width: 100%;
+		margin: 0;
+	}
+}
+
+.services-list .icon-holder a  {
+	margin-bottom: 0;
+	display: block;
+	svg, img {
+		max-width: 3em;
+	}
+}
+
+.services-list .icon-element__content {
+
+	@supports (display: $flagcheck) {
+		padding-top: 0;
 
 	}
+
 }
