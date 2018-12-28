@@ -12,6 +12,7 @@ use SilverStripe\Forms\DropdownField;
 use SilverStripe\Forms\TextField;
 use SilverStripe\AssetAdmin\Forms\UploadField;
 use SilverStripe\ORM\DataExtension;
+use UncleCheese\DisplayLogic\Forms\Wrapper;
 
 
 
@@ -42,12 +43,16 @@ class ElementExtension extends DataExtension
         $tagField = DropdownField::create('TitleTag', 'Tag for Title', singleton('DNADesign\Elemental\Models\BaseElement')->dbObject('TitleTag')->enumValues(), 'h2' );
         $classField = TextField::create('TitleClass', 'Extra Classes for Title');
 
-        $titleOptions = \SilverStripe\Forms\CompositeField::create([
-            $tagField,
-            $classField
-        ]);
 
-        $fields->insertAfter('TitleAndDisplayed', $titleOptions);
+
+        $titleOptions = \SilverStripe\Forms\CompositeField::create([
+                $tagField,
+                $classField
+            ]);
+
+        //$titleOptions->displayIf('ShowTitle')->isChecked();
+
+        $fields->insertAfter('Title', $titleOptions);
 
         $fields->addFieldToTab('Root.Main', UploadField::create('BackgroundImage')->setFolderName('element-backgrounds'));
 
