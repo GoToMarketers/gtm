@@ -2,7 +2,7 @@
 	text-align: center;
 }
 
-.site-footer-cta {
+.site-footer-cta, .site-footer-menu {
 
 	display: flex;
 	flex-wrap: wrap;
@@ -39,6 +39,10 @@
 
 
 
+}
+
+.site-footer-cta ~ .site-footer-menu {
+	margin-top: calc(-1em - 1px);
 }
 
 .site-footer-logo {
@@ -81,4 +85,9 @@
 
 .site-footer-colophon {
 	font-size: 0.75em;
+}
+
+.footer-menu-link {
+	font-size: 0.875em;
+
 }

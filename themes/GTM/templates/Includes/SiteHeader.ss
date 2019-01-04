@@ -17,7 +17,7 @@
 
         </nav>
         <div class="hide-for-large">
-            <button class="menu-toggle" type="button" id="MainNavToggle" data-toggle="MainNavToggle HeaderBar" data-toggler=".is-active"></button>
+            <button class="menu-toggle" type="button" id="MainNavToggle" name="Menu Toggle" data-toggle="MainNavToggle HeaderBar" data-toggler=".is-active"></button>
             <div class="title-bar-title show-for-sr">Menu</div>
         </div>
 
