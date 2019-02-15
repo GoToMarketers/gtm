@@ -76,19 +76,6 @@
             (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild( mtiTracking );
         })();
     </script>
-    <script type="text/javascript">
-        var _ss = _ss || [];
-        _ss.push(['_setDomain', 'https://koi-3QNCP75ZI2.marketingautomation.services/net']);
-        _ss.push(['_setAccount', 'KOI-3YL25CUGQW']);
-        _ss.push(['_trackPageView']);
-        (function() {
-            var ss = document.createElement('script');
-            ss.type = 'text/javascript'; ss.async = true;
-            ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'koi-3QNCP75ZI2.marketingautomation.services/client/ss.js?ver=1.1.1';
-            var scr = document.getElementsByTagName('script')[0];
-            scr.parentNode.insertBefore(ss, scr);
-        })();
-    </script>
 	<link rel="stylesheet" type="text/css" href="/resources/themes/GTM/assets/css/app.css">
 	<%--<% require css("themes/GTM/assets/css/app.css") %>--%>
 	<% include PageCSS %>
