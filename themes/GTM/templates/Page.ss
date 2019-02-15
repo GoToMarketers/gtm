@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="$ContentLocale" class="no-js" $OGNS>
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38475758-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-38475758-1');
+    </script>
+
+
 	<% base_tag %>
 	<title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &raquo; $SiteConfig.Title</title>
 	<meta charset="utf-8">
@@ -114,22 +125,5 @@
         <%--crossorigin="anonymous"></script>--%>
 	<% require javascript('themes/GTM/assets/vendor/lazyload.min.js') %>
 	<% require javascript('themes/GTM/assets/js/app.js') %>
-
-<script type="text/javascript">
-    var _ss = _ss || [];
-    _ss.push(['_setDomain', 'https://koi-3QNCP75ZI2.marketingautomation.services/net']);
-    _ss.push(['_setAccount', 'KOI-3YL25CUGQW']);
-    _ss.push(['_trackPageView']);
-    (function() {
-        var ss = document.createElement('script');
-        ss.type = 'text/javascript'; ss.async = true;
-
-        ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'koi-3QNCP75ZI2.marketingautomation.services/client/ss.js?ver=1.1.1';
-        var scr = document.getElementsByTagName('script')[0];
-        scr.parentNode.insertBefore(ss, scr);
-    })();
-
-    lazyload();
-</script>
 </body>
 </html>
