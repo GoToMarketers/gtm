@@ -18,7 +18,7 @@
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<link rel="shortcut icon" href="themes/simple/images/favicon.ico" />
-
+    <script src='//cdn.freshmarketer.com/50300/50800.js'></script>
 	<style>
         @font-face{
             font-family:"FF Sizmo™ W01_n6";
