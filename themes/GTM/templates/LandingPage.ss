@@ -18,7 +18,7 @@
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<link rel="shortcut icon" href="themes/simple/images/favicon.ico" />
-
+    <script src="https://wchat.freshchat.com/js/widget.js"></script>
 	<style>
         @font-face{
             font-family:"FF Sizmo™ W01_n6";
@@ -119,6 +119,12 @@
         var scr = document.getElementsByTagName('script')[0];
         scr.parentNode.insertBefore(ss, scr);
     })();
+</script>
+<script>
+    window.fcWidget.init({
+        token: "2653eda5-8ffa-42a7-ba5f-51354e6c5773",
+        host: "https://wchat.freshchat.com"
+    });
 </script>
 </body>
 </html>

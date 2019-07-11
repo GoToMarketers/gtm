@@ -19,6 +19,8 @@
 	<![endif]-->
 	<link rel="shortcut icon" href="themes/simple/images/favicon.ico" />
 
+    <script src="https://wchat.freshchat.com/js/widget.js"></script>
+
 	<style>
         @font-face{
             font-family:"FF Sizmo™ W01_n6";
@@ -101,5 +103,11 @@
         <%--crossorigin="anonymous"></script>--%>
 	<% require javascript('themes/GTM/assets/vendor/lazyload.min.js') %>
 	<% require javascript('themes/GTM/assets/js/app.js') %>
+<script>
+    window.fcWidget.init({
+        token: "2653eda5-8ffa-42a7-ba5f-51354e6c5773",
+        host: "https://wchat.freshchat.com"
+    });
+</script>
 </body>
 </html>
