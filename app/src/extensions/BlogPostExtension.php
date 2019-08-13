@@ -30,7 +30,8 @@ class BlogPostExtension extends DataExtension
 
     public function onBeforeWrite()
     {
-        if(!$this->owner->ThumbColor && $this->owner->FeaturedImageID !== 0) {
+
+        if(!$this->owner->ThumbColor && $this->owner->FeaturedImage()->ID !== 0) {
             $this->owner->ThumbColor = $this->owner->FeaturedImage()->DominantColor();
         }
 
