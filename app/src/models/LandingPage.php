@@ -10,7 +10,7 @@
 namespace {
 
 
-    class LandingPage extends CustomPage
+    class LandingPage extends Page
     {
         private static $db = [];
 
