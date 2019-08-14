@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "88f4f285fc51a68080d9a3c13df13130",
+    "content-hash": "3861eed987c0520c7e78153379ab05a1",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -324,23 +324,22 @@
         },
         {
             "name": "dnadesign/silverstripe-elemental",
-            "version": "4.1.1",
+            "version": "4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dnadesign/silverstripe-elemental.git",
-                "reference": "a87a1f3f38888a1ee6a398ec8929dfb891802e86"
+                "reference": "33ae464d7800844e3e0cfada2be1ec8575b0d6e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dnadesign/silverstripe-elemental/zipball/a87a1f3f38888a1ee6a398ec8929dfb891802e86",
-                "reference": "a87a1f3f38888a1ee6a398ec8929dfb891802e86",
+                "url": "https://api.github.com/repos/dnadesign/silverstripe-elemental/zipball/33ae464d7800844e3e0cfada2be1ec8575b0d6e6",
+                "reference": "33ae464d7800844e3e0cfada2be1ec8575b0d6e6",
                 "shasum": ""
             },
             "require": {
-                "silverstripe/admin": "^1.4@dev",
-                "silverstripe/cms": "^4.4@dev",
+                "silverstripe/cms": "^4.3",
                 "silverstripe/vendor-plugin": "^1",
-                "silverstripe/versioned-admin": "^1.2@dev",
+                "silverstripe/versioned-admin": "^1.0",
                 "symbiote/silverstripe-gridfieldextensions": "^3.1"
             },
             "require-dev": {
@@ -356,8 +355,7 @@
             "type": "silverstripe-vendormodule",
             "extra": {
                 "expose": [
-                    "client/dist",
-                    "client/lang"
+                    "client/dist"
                 ]
             },
             "autoload": {
@@ -383,7 +381,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2019-07-22T09:22:49+00:00"
+            "time": "2018-12-18T02:49:23+00:00"
         },
         {
             "name": "dnadesign/silverstripe-elemental-list",
@@ -4727,7 +4725,14 @@
             "time": "2018-12-25T11:19:39+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "3",
+            "alias_normalized": "3.0.0.0",
+            "version": "4.0.0.0",
+            "package": "dnadesign/silverstripe-elemental"
+        }
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
         "nathancox/codeeditorfield": 20
