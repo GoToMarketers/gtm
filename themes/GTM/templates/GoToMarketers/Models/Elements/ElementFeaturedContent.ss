@@ -5,7 +5,11 @@
 	        <div class="blog-summary-content<% if $ContrastFail %> dark-link<% end_if %>" style="background-color: <% if $ThumbColor %>$ThumbColor<% else %>#28998B<% end_if %>">
                 <h1 class="blog-summary-title h3"><a href="$Link">$Title</a> </h1>
                 <div class="blog-summary-excerpt">
-                    <p>While waiting in line for a taxi at the airport in Las Vegas on my way to the ServiceNow Knowledge 18 event…</p>
+	                <% if $Summary %>
+		                $Summary
+	                <% else %>
+                        <p>$Excerpt</p>
+	                <% end_if %>
                 </div>
                 <a href="$Link" class="button small">Read More</a>
             </div>
