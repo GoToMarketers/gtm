@@ -124,5 +124,18 @@ namespace {
 
             return $fields;
         }
+
+
+        function getOGImage() {
+
+            if ($this->FeaturedImage()->ID !== 0) {
+                return $this->FeaturedImage();
+            } elseif ($this->HeaderImage()->ID !== 0) {
+                return $this->HeaderImage();
+            } else {
+                return false;
+            }
+
+        }
     }
 }
