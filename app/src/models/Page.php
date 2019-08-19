@@ -128,8 +128,8 @@ namespace {
 
         function getOGImage() {
 
-            if ($this->FeaturedImage()->ID !== 0) {
-                return $this->FeaturedImage();
+            if ($this->FeatureImage()->ID !== 0) {
+                return $this->FeatureImage();
             } elseif ($this->HeaderImage()->ID !== 0) {
                 return $this->HeaderImage();
             } else {
