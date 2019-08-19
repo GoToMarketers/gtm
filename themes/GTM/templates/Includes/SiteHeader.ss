@@ -9,12 +9,6 @@
 	            <% loop $MenuSet('MainMenu').MenuItems %>
                     <li ><a class="main-menu-link $LinkingMode" href="$Link" title="$Title" >$MenuTitle.XML</a></li>
 	            <% end_loop %>
-
-                <%--<li ><a class="main-menu-link" href="services.html" >Services</a></li>--%>
-                <%--<li ><a class="main-menu-link" href="blog.html" >Blog</a></li>--%>
-                <%--<li ><a class="main-menu-link" href="#" >About Us</a></li>--%>
-                <%--<li ><a class="main-menu-link" href="forms.html" >Contact Us</a></li>--%>
-                <%--<!--<li class="aos-init main-menu-link" data-aos="zoom-in-up" data-aos-delay="1250"><a href="styleguide.html" target="_blank">Styleguide</a></li>-->--%>
             </ul>
 
         </nav>

@@ -2,10 +2,10 @@
 <html lang="$ContentLocale" class="no-js" $OGNS>
 <head>
 	<% base_tag %>
-	<title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &raquo; $SiteConfig.Title</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &raquo; $SiteConfig.Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	$MetaTags(false)
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -14,13 +14,15 @@
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-T2QC8G4');</script>
     <!-- End Google Tag Manager -->
-	<!--[if lt IE 9]>
+    <!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-	<link rel="shortcut icon" href="themes/simple/images/favicon.ico" />
+    <![endif]-->
+    <link rel="shortcut icon" href="themes/simple/images/favicon.ico" />
     <script src='//cdn.freshmarketer.com/50300/50800.js'></script>
+
     <script src="https://wchat.freshchat.com/js/widget.js"></script>
-	<style>
+
+    <style>
         @font-face{
             font-family:"FF Sizmo™ W01_n6";
             src:url("$ThemeDir/fonts/c247f191-4863-446d-bd14-9632472159b9.eot?#iefix") format("eot")
@@ -65,7 +67,8 @@
             font-weight: 400;
             font-style: normal;
         }
-	</style>
+        @charset "UTF-8";.site-header-bar{background-color:#fff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:fixed;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;top:0;bottom:0;width:4em;overflow:hidden;-webkit-transition-property:width;transition-property:width;-webkit-transition-duration:.25s;transition-duration:.25s;-webkit-transition-timing-function:ease-in-out;transition-timing-function:ease-in-out;z-index:2;border-right:1px solid #323a3d}.site-header-bar.expanded{width:80vw}@media print,screen and (min-width:64em){.site-header-bar{width:100%;bottom:auto;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;background-color:transparent;overflow:visible;-webkit-transition:.3s;transition:.3s;padding-left:1em;padding-right:1em;z-index:2}}@media print,screen and (min-width:64em){.site-header-bar:after{content:'';background-color:#fff;display:block;position:absolute;width:100%;-webkit-transform-origin:left bottom;-ms-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(-18deg) translateX(-5%);-ms-transform:rotate(-18deg) translateX(-5%);transform:rotate(-18deg) translateX(-5%);z-index:-1;height:290%;-webkit-transition:.3s;transition:.3s;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:transparent;bottom:-4em;left:0}.site-header-bar.aos-animate:after{-webkit-transform:rotate(0) translateX(0);-ms-transform:rotate(0) translateX(0);transform:rotate(0) translateX(0);background-color:rgba(255,255,255,.95);border-bottom-color:#000;bottom:-.4em}}@media screen and (min-width:87.5em){.site-header-bar:after{bottom:-6.8em}}.site-nav{-webkit-box-flex:2;-webkit-flex-grow:2;-ms-flex-positive:2;flex-grow:2;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;width:80vw}@media (min-width:1024px){.site-nav{width:100%;-webkit-box-align:end;-webkit-align-items:flex-end;-ms-flex-align:end;align-items:flex-end}}@media (min-width:1024px){.main-menu{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}}.main-menu li{padding:.75em 0;opacity:0;-webkit-transition:opacity;transition:opacity;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-in-out;transition-timing-function:ease-in-out;-webkit-transition-delay:.15s;transition-delay:.15s}@media (min-width:1024px){.main-menu li{opacity:1}}.expanded .main-menu li{opacity:1}.site-logo{width:4em;height:4em;margin-left:0;margin-top:.5em}@media print,screen and (min-width:64em){.site-header-bar .site-logo{margin-top:0;overflow:visible!important;-webkit-transform-origin:top left;-ms-transform-origin:top left;transform-origin:top left;-webkit-transform:scale(1.25) translateY(.5em);-ms-transform:scale(1.25) translateY(.5em);transform:scale(1.25) translateY(.5em);-webkit-transition:.3s;transition:.3s}.site-header-bar .site-logo .gtm-symbol,.site-header-bar .site-logo .gtm-wordmark{-webkit-transition:.3s;transition:.3s}.aos-animate .site-logo{-webkit-transform:none;-ms-transform:none;transform:none}.aos-animate .site-logo .gtm-symbol,.aos-animate .site-logo .gtm-wordmark{-webkit-transform-origin:left;-ms-transform-origin:left;transform-origin:left}.aos-animate .site-logo .gtm-symbol{-webkit-transform:translateY(-1em) scale(1.2);-ms-transform:translateY(-1em) scale(1.2);transform:translateY(-1em) scale(1.2)}.aos-animate .site-logo .gtm-wordmark{-webkit-transform:translateX(2.8em) scale(1.2) translateY(1.2em);-ms-transform:translateX(2.8em) scale(1.2) translateY(1.2em);transform:translateX(2.8em) scale(1.2) translateY(1.2em)}}@media print and (-ms-high-contrast:active),screen and (min-width:64em) and (-ms-high-contrast:active){.aos-animate .site-logo{max-height:1em}}@media screen and (min-width:87.5em){.site-header-bar .site-logo{-webkit-transform:scale(1.9) translateY(.5em);-ms-transform:scale(1.9) translateY(.5em);transform:scale(1.9) translateY(.5em)}.aos-animate .site-logo .gtm-symbol{-webkit-transform:translateY(-2.25em) scale(.75);-ms-transform:translateY(-2.25em) scale(.75);transform:translateY(-2.25em) scale(.75)}.aos-animate .site-logo .gtm-wordmark{-webkit-transform:translateX(1.8em) scale(.75) translateY(-.975em);-ms-transform:translateX(1.8em) scale(.75) translateY(-.975em);transform:translateX(1.8em) scale(.75) translateY(-.975em)}}.main-menu-link{color:#000;font-family:"FF Sizmo™ W01","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:1.125em;padding:.5em 1em}@media print,screen and (min-width:64em){.main-menu-link{font-size:.875em;color:#fff;text-shadow:0 0 3px rgba(0,0,0,.5);-webkit-transition:.3s;transition:.3s}}@media print,screen and (min-width:64em){.aos-animate .main-menu-link{color:#000;text-shadow:0 0 3px transparent}}.site-header .logo-color{fill:#28998b}.menu-toggle{position:relative;display:block;width:24px;height:18px;background:0 0;border-top:4px solid;border-bottom:4px solid;color:#185c54;font-size:0;-webkit-transition:all .25s ease-in-out;transition:all .25s ease-in-out;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;margin-left:24px;margin-right:24px;margin-bottom:24px}.menu-toggle:after,.menu-toggle:before{content:'';display:block;width:100%;height:4px;position:absolute;top:50%;left:50%;background:currentColor;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transition:-webkit-transform .25s ease-in-out;transition:-webkit-transform .25s ease-in-out;transition:transform .25s ease-in-out;transition:transform .25s ease-in-out,-webkit-transform .25s ease-in-out;-webkit-transition-delay:.25s;transition-delay:.25s}.expanded .menu-toggle{-webkit-align-self:end;-ms-flex-item-align:end;align-self:end}button:hover{color:#28998b}button.is-active{border-color:transparent}button.is-active:before{-webkit-transform:translate(-50%,-50%) rotate(45deg);-ms-transform:translate(-50%,-50%) rotate(45deg);transform:translate(-50%,-50%) rotate(45deg)}button.is-active:after{-webkit-transform:translate(-50%,-50%) rotate(-45deg);-ms-transform:translate(-50%,-50%) rotate(-45deg);transform:translate(-50%,-50%) rotate(-45deg)}
+    </style>
     <script type="text/javascript">
         var MTIProjectId='88fc79de-241d-49ec-b734-8e0c431f95b2';
         (function() {
@@ -76,51 +79,31 @@
             (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild( mtiTracking );
         })();
     </script>
-    <script type="text/javascript">
-        var _ss = _ss || [];
-        _ss.push(['_setDomain', 'https://koi-3QNCP75ZI2.marketingautomation.services/net']);
-        _ss.push(['_setAccount', 'KOI-3YL25CUGQW']);
-        _ss.push(['_trackPageView']);
-        (function() {
-            var ss = document.createElement('script');
-            ss.type = 'text/javascript'; ss.async = true;
-            ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'koi-3QNCP75ZI2.marketingautomation.services/client/ss.js?ver=1.1.1';
-            var scr = document.getElementsByTagName('script')[0];
-            scr.parentNode.insertBefore(ss, scr);
-        })();
-    </script>
+    <link rel="stylesheet" type="text/css" href="/resources/themes/GTM/assets/css/app.css">
+	<%--<% require css("themes/GTM/assets/css/app.css") %>--%>
 	<% include PageCSS %>
 	<% if $ExtraJS %><script>$ExtraJS</script><% end_if %>
+
 </head>
 <body class="$ClassName.ShortName" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2QC8G4"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<% include SiteHeader_Landing %>
+	<% include SiteHeader_Landing %>
 <main class="main">
 	<% include PageHeader %>
     <div class="page-body" aos-anchor-placement="bottom-bottom">
 		$Layout
-	    $Form
     </div>
 </main>
-<% include SiteFooter %>
-<% require javascript('themes/GTM/assets/js/app.js') %>
-<script type="text/javascript">
-    var _ss = _ss || [];
-    _ss.push(['_setDomain', 'https://koi-3QNCP75ZI2.marketingautomation.services/net']);
-    _ss.push(['_setAccount', 'KOI-3YL25CUGQW']);
-    _ss.push(['_trackPageView']);
-    (function() {
-        var ss = document.createElement('script');
-        ss.type = 'text/javascript'; ss.async = true;
-
-        ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'koi-3QNCP75ZI2.marketingautomation.services/client/ss.js?ver=1.1.1';
-        var scr = document.getElementsByTagName('script')[0];
-        scr.parentNode.insertBefore(ss, scr);
-    })();
-</script>
+	<% include SiteFooter_Landing %>
+	<%--<script--%>
+	<%--src="//code.jquery.com/jquery-3.3.1.min.js"--%>
+	<%--integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="--%>
+	<%--crossorigin="anonymous"></script>--%>
+	<% require javascript('themes/GTM/assets/vendor/lazyload.min.js') %>
+	<% require javascript('themes/GTM/assets/js/app.js') %>
 <script>
     window.fcWidget.init({
         token: "2653eda5-8ffa-42a7-ba5f-51354e6c5773",
