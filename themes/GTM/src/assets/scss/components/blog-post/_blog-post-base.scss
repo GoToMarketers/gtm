@@ -8,17 +8,13 @@
 		}
 	}
 
-	@supports (display: $flagcheck) {
-		.blog-post {
-			display: grid;
-			grid-template-columns: 1fr 60rem 1fr;
-
-			& > * {
-				grid-column: 2;
-			}
-
-		}
-
+	.blog-post {
+		width: 100%;
+		max-width: 60rem;
+		padding-left: 1em;
+		padding-right: 1em;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 }

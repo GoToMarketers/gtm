@@ -117,7 +117,9 @@ a {
 	}
 
 
-	img, .captionFigure {
+	img, .captionFigure, .captionImage {
+
+		margin-top: 1.5em;
 
 		&.leftAlone {
 			@include breakpoint(xlarge) {
@@ -155,8 +157,19 @@ a {
 				margin-right: -16vw;
 			}
 		}
+	}
 
+	.captionFigure, .captionFigure {
 
+		& > img {
+			float: none;
+			margin: 0;
+			max-width: 100%;
+		}
+	}
+
+	.caption {
+		font-size: 0.75em;
 	}
 
 }

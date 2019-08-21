@@ -283,3 +283,13 @@ button.is-active {
 		transform: translate(-50%, -50%) rotate(-45deg);
 	}
 }
+
+
+.LandingPage .site-header-bar {
+
+	@include  breakpoint(large) {
+
+		justify-content: flex-start;
+	}
+
+}

@@ -109,6 +109,7 @@
         token: "2653eda5-8ffa-42a7-ba5f-51354e6c5773",
         host: "https://wchat.freshchat.com"
     });
+    lazyload();
 </script>
 </body>
 </html>
