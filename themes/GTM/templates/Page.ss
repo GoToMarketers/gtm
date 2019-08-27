@@ -17,11 +17,11 @@
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-    <link rel="apple-touch-icon" sizes="180x180" href="themes/GTM/assets/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="themes/GTM/assets/img/favicon-32x32.png">
-    <link rel="shortcut icon" type="image/png" sizes="16x16" href="themes/GTM/assets/img/favicon-16x16.png">
-    <link rel="manifest" href="themes/GTM/assets/img/site.webmanifest">
-    <link rel="mask-icon" href="themes/GTM/assets/img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/themes/GTM/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/themes/GTM/assets/img/favicon-32x32.png">
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="resources/themes/GTM/assets/img/favicon-16x16.png">
+    <link rel="manifest" href="resources/themes/GTM/assets/img/site.webmanifest">
+    <link rel="mask-icon" href="resources/themes/GTM/assets/img/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <script src='//cdn.freshmarketer.com/50300/50800.js'></script>
@@ -117,5 +117,6 @@
     });
     lazyload();
 </script>
+
 </body>
 </html>
