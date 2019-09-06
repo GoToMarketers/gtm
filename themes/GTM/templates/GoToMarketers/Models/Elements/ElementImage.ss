@@ -12,6 +12,8 @@
 			</figcaption>
 		</figure>
 	<% else %>
+		<% if $URL %><a href="$URL"> <% end_if %>
 		$Image
+		<% if $URL %></a> <% end_if %>
 	<% end_if %>
 </div>
