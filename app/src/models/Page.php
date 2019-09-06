@@ -20,7 +20,9 @@ namespace {
             "HeaderContent" => "HTMLText",
             "HeaderClasses" => "Varchar(255)",
             "ExtraCSS" => "HTMLText",
-            "ExtraJS" => "HTMLText"
+            "ExtraJS" => "HTMLText",
+            "ExtraJSFooter" => "HTMLText",
+            "ExtraTagsFooter" => "HTMLText"
         ];
 
         private static $has_one = [
@@ -120,6 +122,26 @@ namespace {
                                ->setMode('javascript')
                                ->setTheme('twilight')
                                ->setDescription('Will render in &lt;head /&gt;')
+            );
+
+            $fields->addFieldToTab(
+                "Root.Code",
+                CodeEditorField::create('ExtraTagsFooter', 'Page Specific Footer Tags')
+                               ->addExtraClass('stacked')
+                               ->setRows(10)
+                               ->setMode('html')
+                               ->setTheme('twilight')
+                               ->setDescription('Use to add extra markup before &lt;/body /&gt;')
+            );
+
+            $fields->addFieldToTab(
+                "Root.Code",
+                CodeEditorField::create('ExtraJSFooter', 'Page Specific JavaScript (Footer)')
+                               ->addExtraClass('stacked')
+                               ->setRows(30)
+                               ->setMode('javascript')
+                               ->setTheme('twilight')
+                               ->setDescription('Will render before &lt;/body /&gt;')
             );
 
             return $fields;

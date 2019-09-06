@@ -117,6 +117,7 @@
     });
     lazyload();
 </script>
-
+<% if $ExtraTagsFooter %>$ExtraTagsFooter<% end_if %>
+<% if $ExtraJSFooter %><script>$ExtraJSFooter</script><% end_if %>
 </body>
 </html>
