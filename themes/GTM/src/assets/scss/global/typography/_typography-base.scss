@@ -132,7 +132,7 @@ a {
 			margin-right: auto;
 		}
 
-		&.left, &.leftAlone,&.right, &.rightAlone
+		&.left, &.leftAlone, &.right, &.rightAlone
 		{
 			margin-right: 40px;
 			margin-left: 40px;
@@ -162,9 +162,14 @@ a {
 	.captionFigure, .captionFigure {
 
 		& > img {
-			float: none;
-			margin: 0;
-			max-width: 100%;
+
+			&.left, &.leftAlone, &.right, &.rightAlone
+			{
+				float: none;
+				margin: 0;
+				max-width: 100%;
+
+			}
 		}
 	}
 

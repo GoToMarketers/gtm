@@ -28,6 +28,10 @@ img {
 	height: auto;
 }
 
+.captionImage {
+	max-width: 100%;
+}
+
 p {
 	margin-top: #{$lineHeight-base}em;
 
