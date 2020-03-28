@@ -100,7 +100,9 @@
 	<link rel="stylesheet" type="text/css" href="/resources/themes/GTM/assets/css/app.css">
 	<%--<% require css("themes/GTM/assets/css/app.css") %>--%>
 	<% include PageCSS %>
-	<% if $ExtraJS %><script>$ExtraJS</script><% end_if %>
+	<% if $ExtraJS %><script>
+		$ExtraJS
+	</script><% end_if %>
 
 </head>
 <body class="$ClassName.ShortName" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
@@ -130,6 +132,8 @@
     lazyload();
 </script>
 <% if $ExtraTagsFooter %>$ExtraTagsFooter<% end_if %>
-<% if $ExtraJSFooter %><script>$ExtraJSFooter</script><% end_if %>
+<% if $ExtraJSFooter %><script>
+	$ExtraJSFooter
+</script><% end_if %>
 </body>
 </html>

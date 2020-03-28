@@ -116,7 +116,7 @@ namespace {
 
             $fields->addFieldToTab(
                 "Root.Code",
-                CodeEditorField::create('ExtraJS', 'Page Specific JavaScript')
+                CodeEditorField::create('ExtraJS', 'Page Specific JavaScript DO NOT INCLUDE <script></script>')
                                ->addExtraClass('stacked')
                                ->setRows(30)
                                ->setMode('javascript')
@@ -131,12 +131,12 @@ namespace {
                                ->setRows(10)
                                ->setMode('html')
                                ->setTheme('twilight')
-                               ->setDescription('Use to add extra markup before &lt;/body /&gt;')
+                               ->setDescription('Use to add extra markup before &lt;/body /&gt; example extra JS files')
             );
 
             $fields->addFieldToTab(
                 "Root.Code",
-                CodeEditorField::create('ExtraJSFooter', 'Page Specific JavaScript (Footer)')
+                CodeEditorField::create('ExtraJSFooter', 'Page Specific JavaScript (Footer)  DO NOT INCLUDE <script></script>')
                                ->addExtraClass('stacked')
                                ->setRows(30)
                                ->setMode('javascript')
