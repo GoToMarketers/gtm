@@ -16,7 +16,7 @@
     "jquery": "^3.4.1",
     "mixin-deep": "^2.0.1",
     "motion-ui": "^2.0.3",
-    "set-value": "^3.0.1",
+    "set-value": "^2.0.1",
     "what-input": "^5.1.2"
   },
   "devDependencies": {
