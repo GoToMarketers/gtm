@@ -65,12 +65,16 @@ class ElementIcon extends ElementImage {
     }
 
     public function getIconLink() {
-        if ($this->ID !== 0) {
+        if ($this->LinkedPageID !== 0) {
             return $this->LinkedPage()->Link();
         }
 
         if($this->ExternalLink !== '') {
             return $this->ExternalLink;
+        }
+
+        if($this->URL !== '') {
+            return $this->URL;
         }
 
         return false;

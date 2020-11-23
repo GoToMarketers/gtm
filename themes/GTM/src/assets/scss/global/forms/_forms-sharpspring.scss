@@ -4,7 +4,7 @@ ul.form_fields {
 	margin: 0;
 
 	& > li {
-		margin-bottom: $form-spacing;
+		margin-bottom: 1.75em;
 		display: flex;
 		flex-direction: column;
 		flex-wrap: nowrap;
@@ -20,3 +20,7 @@ ul.form_fields {
 
 }
 
+
+fieldset li label {
+	margin-bottom: 0;
+}
