@@ -110,7 +110,7 @@
 	<%--crossorigin="anonymous"></script>--%>
 	<% require javascript('themes/GTM/assets/vendor/lazyload.min.js') %>
 	<% require javascript('themes/GTM/assets/js/app.js') %>
-
+    <script>lazyload();</script>
 	<% if $ExtraTagsFooter %>$ExtraTagsFooter<% end_if %>
 	<% if $ExtraJSFooter %>$ExtraJSFooter<% end_if %>
 </body>
