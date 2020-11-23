@@ -99,9 +99,9 @@
 	<link rel="stylesheet" type="text/css" href="/resources/themes/GTM/assets/css/app.css">
 	<%--<% require css("themes/GTM/assets/css/app.css") %>--%>
 	<% include PageCSS %>
-	<% if $ExtraJS %><script>
+	<% if $ExtraJS %>
 		$ExtraJS
-	</script><% end_if %>
+	<% end_if %>
 
 </head>
 <body class="$ClassName.ShortName" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
