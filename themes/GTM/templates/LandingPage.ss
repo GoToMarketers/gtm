@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="$ContentLocale" class="no-js" $OGNS>
+<html lang="$ContentLocale" class="no-js" >
 <head>
 	<% base_tag %>
     <title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &raquo; $SiteConfig.Title</title>
